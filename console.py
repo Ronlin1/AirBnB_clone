@@ -16,7 +16,7 @@ from models.review import Review
 
 class ALXCommand(cmd.Cmd):
     """ General Class for ALXCommand """
-    prompt = '(alx) '
+    prompt = '(hbnb) '
     classes = {'BaseModel': BaseModel, 'User': User, 'City': City,
                'Place': Place, 'Amenity': Amenity, 'Review': Review,
                'State': State}
