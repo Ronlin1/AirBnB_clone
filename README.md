@@ -1,27 +1,30 @@
-0x00. AirBnB clone - The console
-The console is the first segment of the AirBnB project at ALX Africa that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
+# AirBnB clone - The console
 
-How the command interpreter functions:
-1. Create a new object (ex: a new User or a new Place)
-2. Retrieve an object from a file, a database etc...
-3. Do operations on objects (count, compute stats, etc...)
-4. Update attributes of an object
-5. Destroy an object
 
-Examples of command interpreter: $./console.py (hbnb) help
-Documented commands (type help <topic>):
-========================================
-EOF  help  quit
-(hbnb) 
-$
-$ cat test_help
-help
-$
-$ cat test_help | ./console.py
-(hbnb)
+The AirBnB console this about create a minishell, this console works in interactive and non-interactive mode; this project is just a basic copy of AirBnB, 
+
+# command interpreter or console
+The first piece is to manipulate a powerful storage system. This storage engine will give us an abstraction between “My object” and “How they are stored and persisted”. This means: from your console code (the command interpreter itself) and from the front-end and RestAPI you will build later, you won’t have to pay attention (take care) of how your objects are stored.
+#  how to start it:
+In order to start the console, you must use the following command: ./console.py
+
+# How to use:
+- manage (create, update, destroy, etc) objects via a console / command interprete
+- store and persist objects to a file (JSON file)
+- Commands: create, show, destroy, all (shows all), update, help, quit
+### Example how to open:
+```
+$ ./console.py
+(hbnb) help
 
 Documented commands (type help <topic>):
 ========================================
 EOF  help  quit
+
 (hbnb) 
+(hbnb) 
+(hbnb) quit
 $
+```
+
+
